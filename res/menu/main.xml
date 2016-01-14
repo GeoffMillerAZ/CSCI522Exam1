@@ -1,0 +1,5 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/menuSquareCalc" android:title="Square Calculations"></item>
+    <item android:id="@+id/menuCircleCalc" android:title="Circle Calculations"></item>
+
+</menu>

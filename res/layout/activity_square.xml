@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SquareActivity" >
+
+    <TextView
+        android:id="@+id/textViewSquareTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Square Calculations" />
+
+    <TextView
+        android:id="@+id/textViewSquareInputLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewSquareTitle"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="35dp"
+        android:text="Input" />
+
+    <EditText
+        android:id="@+id/editTextSquareInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewSquareTitle"
+        android:layout_alignTop="@+id/textViewSquareInputLabel"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0.00" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonSquareCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewSquareInputLabel"
+        android:layout_below="@+id/editTextSquareInput"
+        android:layout_marginTop="20dp"
+        android:text="Calculate" />
+
+    <Button
+        android:id="@+id/buttonSquareClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonSquareCalculate"
+        android:layout_alignBottom="@+id/buttonSquareCalculate"
+        android:layout_alignLeft="@+id/editTextSquareInput"
+        android:layout_marginLeft="38dp"
+        android:text="Clear" />
+
+    <TextView
+        android:id="@+id/textViewSquareAreaLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textViewSquareInputLabel"
+        android:layout_centerVertical="true"
+        android:text="Area" />
+
+    <TextView
+        android:id="@+id/textViewSquareAreaResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewSquareAreaLabel"
+        android:layout_alignBottom="@+id/textViewSquareAreaLabel"
+        android:layout_alignLeft="@+id/editTextSquareInput"
+        android:layout_marginLeft="24dp"
+        android:text="0.00" />
+
+    <TextView
+        android:id="@+id/textViewSquarePerimeterResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewSquarePerimeterLabel"
+        android:layout_alignBottom="@+id/textViewSquarePerimeterLabel"
+        android:layout_alignRight="@+id/textViewSquareAreaResult"
+        android:text="0.00" />
+
+    <TextView
+        android:id="@+id/textViewSquarePerimeterLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewSquareAreaLabel"
+        android:layout_below="@+id/textViewSquareAreaLabel"
+        android:layout_marginTop="25dp"
+        android:text="Perimeter" />
+
+</RelativeLayout>
